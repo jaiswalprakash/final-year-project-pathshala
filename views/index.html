@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PathShala-Elearning</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./images/logo.png" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="./css/commonStyle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+  <link href="#" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib//bootstrap.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/login.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+</head>
+<style></style>
+
+<body>
+  <!------------------------------nav bar------------------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav2">
+    <a class="navbar-brand text-white font-weight-bold" href="#">
+      PathShala</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="/teacher.html">Become an Instructor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#log">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="
+                nav-link nav-link
+                text-white
+                btn btn-danger btn-round
+                font-weight-bold
+              " href="/signup.html"><i class="fas fa-sign-in-alt"></i> SignUp</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!---------------------------------------end navbar---------------------------------------------->
+  <div class="jumbotron jumbotron-fluid masthead" style="
+        background: url('/images/greenblue.jpg') center/cover no-repeat;
+        -webkit-box-shadow: 0 15px 20px -10px black;
+        -moz-box-shadow: 0 8px 10px -5px black;
+        box-shadow: 0 8px 10px -5px black;
+      ">
+    <div class="container text-center align-items-center">
+      <div class="p-4"></div>
+
+      <h1 class="display-4 font-weight-bold w-responsive">
+        Learn <span style="color: rgb(255, 0, 0)">On</span> Your
+        <span style="color: rgb(255, 0, 0)">Schedule </span>
+        <!-- <span class="text-primary">Any Time</span><span class="text text-warning"> Any Where</span> -->
+      </h1>
+      <p class="font-weight-bold">
+        Your career is defined by what you know and how well you know it.
+        Benchmark and prove your knowledge, keep up with emerging trends, and
+        build in-demand skills with
+        <span class="font-weight-bold" style="color: rgb(255, 0, 34)">-elearning</span>.
+      </p>
+      <div class="p-5"></div>
+    </div>
+  </div>
+  <div id="snackbar"></div>
+  <!----------------------------------------------------how it's work------------------------------------------->
+  <section class="d-none d-md-block" style="min-height: 100vh">
+    <h2 class="text-uppercase text-primary py-4 text-center font-weight-bold" style="color: rgb(5, 110, 79)">
+      <b style="color: rgb(12, 121, 88)"> How It Work's</b>
+    </h2>
+    <hr class="bg-danger mx-auto mb-3" style="height: 3px; max-width: 150px" />
+    <div class="container">
+      <div class="row align-self-center" style="margin-top: 15vh">
+        <div class="row">
+          <div class="col-sm-4 my-5 uploadImage">
+            <div class="card" style="
+                  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 9px 26px 0 rgba(0, 0, 0, 0.19), bordor;
+                ">
+              <img class="card-img" src="/images/notebook1.jpg" alt="Card
+                  image cap" />
+              <div class="card-img-overlay">
+                <h5 class="card-title font-weight-bold text-danger">
+                  REGISTER
+                </h5>
+                <p class="card-text font-weight-bold">
+                  Sign up through your credentials and login for more content
+                  <i class="fas fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 uploadImage">
+            <div class="card" style="
+                  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 9px 26px 0 rgba(0, 0, 0, 0.19);
+                ">
+              <img class="card-img" src="images/notebook2.jpg" alt="Card image
+                  cap" />
+              <div class="card-img-overlay">
+                <h5 class="card-title font-weight-bold text-danger">
+                  EXPLORE
+                </h5>
+                <p class="card-text font-weight-bold">
+                  Start exploring the various courses available
+                  <i class="fas fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 my-5 uploadImage">
+            <div class="card" style="
+                  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                    0 9px 26px 0 rgba(0, 0, 0, 0.19);
+                ">
+              <img class="card-img" src="/images/notebook3.jpg" alt="Card
+                  image cap" />
+              <div class="card-img-overlay">
+                <h5 class="card-title font-weight-bold text-danger">
+                  GET STARTED
+                </h5>
+                <p class="card-text font-weight-bold">
+                  Have a great learning <br />
+                  experience
+                  <i class="fas fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------- project detail's------------------------>
+  <section class="py-3 d-none d-md-block" style="min-height: 100vh">
+    <h2 class="h1-responsive font-weight-bold text-center my-5" style="color: rgb(5, 110, 79)">
+      About US
+    </h2>
+    <hr class="bg-danger mx-auto mb-3" style="height: 3px; max-width: 150px" />
+    <p class="grey-text text-center w-responsive mx-auto mb-5">
+      PathShala are Primary focus is on promoting an E-learning culture among
+      students and professors and connecting students to the best instructors
+      to intercommunicate knowledge. We come with a motto for students to
+      learn on their on-schedule anytime anywhere.
+    </p>
+
+    <div class="row mx-1">
+      <div class="col-md-12 mb-4">
+        <div class="card card-image" style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.4),
+                  rgba(0, 0, 0, 0.4)
+                ),
+                url(/images/keyboard.jpg);
+              background-image: linear-gradient();
+              background-position: center;
+              background-size: cover;
+            ">
+          <div class="
+                text-white text-center
+                d-flex
+                align-items-center
+                rgba-black-strong
+                py-5
+                px-4
+              ">
+            <div>
+              <h6 class="purple-text">
+                <i class="fas fa-video"></i><strong> Video</strong>
+              </h6>
+              <h3 class="card-title py-3 font-weight-bold">
+                <strong>PathShala-Elearning</strong>
+              </h3>
+              <p class="pb-3">
+                Pathshala is a responsive Web application that provides an
+                E-learning platform for engineering students to find various
+                video courses provided by different professors.
+              </p>
+              <a class="btn btn-danger btn-rounded"><i class="far fa-clone left"></i> View project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Grid row-->
+  </section>
+
+  <!---------------------------------------------DEveloper section -------------------------->
+  <section class="py-3" style="min-height: 100vh">
+    <h2 class="text-uppercase text-primary py-5 text-center font-weight-bold">
+      <b style="color: rgb(12, 121, 88)"> Developer's</b>
+    </h2>
+    <hr class="bg-danger mx-auto mb-3" style="height: 3px; max-width: 150px" />
+    <div class="container-fluid">
+      <div class="row align-self-center" style="margin-top: 5vh">
+        <div class="col-lg-3 my-2 uploadImage">
+          <div class="card bg-light mx-auto" style="
+                position: relative;
+                height: 400px;
+                width: 87%;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 9px 26px 0 rgba(0, 0, 0, 0.19);
+              ">
+            <i class="fa fa-quote-left fa-3x mx-auto py-3 text-danger" aria-hidden="true"></i>
+            <p class="pt-2 px-2 text-center">
+              Software Developer,
+              <i class="fas fa-envelope mr-3">prakashjaiswal625 @gmail.com</i>
+            </p>
+            <hr class="bg-danger mb-2 align-self-center" style="
+                  height: 2px;
+                  width: 30px;
+                  position: absolute;
+                  bottom: 150px;
+                " />
+            <img class="img-fluid w-25 mx-auto align-self-center"
+              style="border-radius: 50%; position: absolute; bottom: 70px" src="/images/prakash.jpg" />
+            <p class="text-center text-warning align-self-center" style="position: absolute; bottom: 10px">
+              PRAKASH JAISWAL
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 my-2 uploadImage">
+          <div class="card bg-light mx-auto" style="
+                position: relative;
+                height: 400px;
+                width: 87%;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 9px 26px 0 rgba(0, 0, 0, 0.19);
+              ">
+            <i class="fa fa-quote-left fa-3x mx-auto py-3 text-primary" aria-hidden="true"></i>
+            <p class="pt-2 px-2 text-center">
+              Software Developer,<i class="fas fa-envelope mr-3">
+                singhforever9917@ gmail.com</i>
+            </p>
+            <hr class="bg-warning mb-2 align-self-center" style="
+                  height: 2px;
+                  width: 30px;
+                  position: absolute;
+                  bottom: 150px;
+                " />
+            <img class="img-fluid w-25 mx-auto align-self-center"
+              style="border-radius: 50%; position: absolute; bottom: 70px" src="/images/sahil.jpg" />
+            <p class="text-center text-warning align-self-center" style="position: absolute; bottom: 10px">
+              SAHIL SINGH
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 my-2 uploadImage">
+          <div class="card bg-light mx-auto" style="
+                position: relative;
+                height: 400px;
+                width: 87%;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 9px 26px 0 rgba(0, 0, 0, 0.19);
+              ">
+            <i class="fa fa-quote-left fa-3x mx-auto py-3 text-success" aria-hidden="true"></i>
+            <p class="pt-2 px-2 text-center">
+              Software Developer,<i class="fas fa-envelope mr-3">
+                shubhudeepsaha@ gmail.com</i>
+            </p>
+            <hr class="bg-warning mb-2 align-self-center" style="
+                  height: 2px;
+                  width: 30px;
+                  position: absolute;
+                  bottom: 150px;
+                " />
+            <img class="img-fluid w-25 mx-auto align-self-center"
+              style="border-radius: 50%; position: absolute; bottom: 70px" src="/images/shubhudeep.jpg" />
+            <p class="text-center text-warning align-self-center" style="position: absolute; bottom: 10px">
+              SHUBHODEEP SAHA
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 my-2 uploadImage">
+          <div class="card bg-light mx-auto" style="
+                position: relative;
+                height: 400px;
+                width: 87%;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 9px 26px 0 rgba(0, 0, 0, 0.19);
+              ">
+            <i class="fa fa-quote-left fa-3x mx-auto py-3 text-warning" aria-hidden="true"></i>
+            <p class="pt-2 px-2 text-center">
+              Software Developer,<i class="fas fa-envelope mr-3">
+                sahilkumar@ gmail.com</i>
+            </p>
+            <hr class="bg-warning mb-2 align-self-center" style="
+                  height: 2px;
+                  width: 30px;
+                  position: absolute;
+                  bottom: 150px;
+                " />
+            <img class="img-fluid w-25 mx-auto align-self-center"
+              style="border-radius: 50%; position: absolute; bottom: 70px" src="/images/SAHIL RAI.JPG" />
+            <p class="text-center text-warning align-self-center" style="position: absolute; bottom: 10px">
+              SAHIL KUMAR RAI
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------------model1------------------------------------------->
+  <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(12, 121, 88)">
+          <h5 class="modal-title text-white" id="exampleModalCenterTitle">
+            Recover password
+          </h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p class="w-responsive">
+              Enter the <b style="color: red">email address</b> you used when
+              you joined and we will send you Otp to reset your password. For
+              <b style="color: red">security reasons</b>, we do NOT store your
+              password. So rest assured that we will never send your password
+              <b style="color: red">via</b> email
+            </p>
+            <div class="form-group">
+              <p class="font-weight-bold">Email Address:</p>
+              <input type="text" class="form-control" value="" id="emailF" />
+            </div>
+            <!-- data-dismiss="modal" data-toggle="modal" data-target="#Modal2" -->
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#Modal2"
+              onclick="forgotPassword()">
+              Send Otp
+            </button>
+          </form>
+        </div>
+        <!-- <div class="modal-footer justify-content-center">
+          <a class="fb-ic"><i class="fab fa-facebook-f fa-2x mx-1" style="color: rgb(67, 67, 241);"></i></a>
+
+          <a class="tw-ic"><i class="fab fa-twitter fa-2x mx-1" style="color:
+                rgb(57, 194, 228);"></i></a>
+
+          <a class="li-ic"><i class="fab fa-linkedin-in fa-2x mx-1" style="color: rgb(5, 89, 145);"></i></a>
+
+          <a class="ins-ic"><i class="fab fa-instagram fa-2x mx-1" style="color: rgb(204, 67, 26);"></i></a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-----------------------------------modal2-------------------------------------------------------------->
+  <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(12, 121, 88)">
+          <h5 class="modal-title text-white" id="exampleModalLongTitle">
+            Recover password
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p class="w-responsive">
+              Enter the<b style="color: red"> Otp</b> as well as your
+              <b style="color: red"> New Password</b>.
+            </p>
+            <div class="form-group">
+              <p class="font-weight-bold">Otp:</p>
+              <input type="text" class="form-control" value="" id="otp" />
+              <p class="font-weight-bold">New Password:</p>
+              <input type="text" class="form-control" value="" id="nPwd" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"
+            onclick="recoverPassword()">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------login page------------------------------------------->
+  <div class="container py-3 bg-light" style="min-height: 100vh" id="log">
+    <h2 class="text-uppercase text-primary py-5 text-center font-weight-bold">
+      <b style="color: rgb(12, 121, 88)"> LogIn</b>
+    </h2>
+    <hr class="bg-danger mx-auto mb-3" style="height: 3px; max-width: 150px" />
+    <div class="row py-5 mt-5 col-11 mx-auto">
+      <div class="col-md-6 pl-4 py-4 font-weight-bold" style="background-color: rgb(230, 230, 230)">
+        <h3 class="pb-3">LogIn</h3>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control w-75 mb-3" id="email" aria-describedby="name"
+              placeholder="Your Email" required />
+            <input type="password" class="form-control w-75 mb-3" id="pwd" aria-describedby="phone"
+              placeholder="Your Password" onkeyup="logIn()" required />
+
+            <div class="p-2"></div>
+            <button type="button" class="btn px-4 text-white font-weight-bold"
+              style="background-color: rgb(44, 122, 122)" onclick="logIn()">
+              login
+            </button>
+            <a href="#" data-toggle="modal" data-target="#Modal1">Forget Password?</a>
+            <div class="p-2"></div>
+
+            <p class="message">
+              Don't have an account ?<a href="./signup.html"> SignUp</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5 py-4 pl-4 text-white d-none d-md-block" style="background-color: rgb(44, 122, 122)">
+        <h4 class="pb-5">PathShala-Elearning</h4>
+        <p class="pb-3" display-4>
+          <i class="fas fa-long-arrow-alt-left"></i> This is a secure system
+          and you will need to provide your login details to access the site
+        </p>
+        <p class="pb-3"><i class="fas fa-globe pr-4"></i>www.PathShala.com</p>
+        <div class="justify-content-center">
+          <a class="fb-ic btn btn-primary" style="border-radius: 50%"><i class="fab fa-facebook-f text-white"></i></a>
+
+          <a class="tw-ic btn btn-info" style="border-radius: 50%"><i class="fab fa-twitter text-white"></i></a>
+
+          <a class="li-ic btn btn-primary" style="border-radius: 50%"><i class="fab fa-linkedin-in text-white"></i></a>
+
+          <a class="ins-ic btn btn-danger" style="border-radius: 50%"><i class="fab fa-instagram text-white"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------footer----------------------------------------------------------------------------->
+  <footer class="page-footer font-small blue-grey lighten-5">
+    <div style="background-color: #22ccc4" class="d-none d-md-block">
+      <div class="container">
+        <div class="
+              row
+              py-4
+              d-flex
+              align-items-center
+              text-white text-uppercase
+              font-weight-bold
+            ">
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Social networks!</h6>
+          </div>
+
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+      <div class="row mt-3 dark-grey-text text-white">
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Address</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto bg-danger" style="width: 60px" />
+          <p>
+            Vidyanagar, NH7, Bangalore International Airport Road(KIA),
+            Chikkajala, Bangalore karnataka,North- 562157
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+          <h6 class="text-uppercase font-weight-bold">Categories</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto bg-danger" style="width: 60px" />
+          <p>Become an Instructor</p>
+          <p>Login</p>
+          <p>SignUp</p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Developer's</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto bg-danger" style="width: 60px" />
+          <p>Prakash jaiswal</p>
+          <p>Sahil Singh</p>
+          <p>Shubhudeep saha</p>
+          <p>Sahil kumari rai</p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-white">
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto bg-danger" style="width: 60px" />
+          <p><i class="fas fa-home mr-3"></i>karnataka,Bangalore</p>
+          <p><i class="fas fa-envelope mr-3"></i> admissions@PathShala.com</p>
+          <p><i class="fas fa-phone mr-3"></i> 9731226262</p>
+          <p><i class="fas fa-print mr-3"></i>080-28477461</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright text-center text-white py-3">
+      @2020 Copyright:
+      <a class="dark-grey-text text-white" href="#"> PathShala-Elearning</a>
+    </div>
+  </footer>
+</body>
+</html>

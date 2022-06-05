@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./images/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="./css/commonStyle.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/views/css/signup.css">
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib//bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/signUp.js"></script>
+
+<!------------------------------css------------------------------------>
+<style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+ body{
+        background-image: linear-gradient(rgba(0, 5, 6, 0.466),rgba(5, 0, 5, 0.466)),url(/images/greenblue.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        
+    }
+.login-form{
+        display: none;
+    }
+.imag{
+        background-image: url(/views/images/sahil.jpg);
+        width: 50%;
+        margin-left: 20%;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        }
+</style>
+<!----------------------------------------------------------------------------->
+    <title>PathShala-Elearning</title>
+  </head>
+    <body>
+      
+      <div class="container  py-3 ">
+        <div class="row py-5 mt-5 col-11 mx-auto">
+        <div class="col-md-6 pl-4 py-4  font-weight-bold" style="background-color: rgba(247, 249, 252, 0.596);"><h3 class="pb-3">SignUp</h3>
+          <form>
+              <div class="form-group">
+                  <input type="text" class="form-control w-75 mb-3" id="nameTS" aria-describedby="name" placeholder="Your Name" required>
+                  <input type="tel" class="form-control w-75 mb-3" id="Designation" aria-describedby="phone" placeholder="Your Designation" required>
+                  <input type="email" class="form-control w-75 mb-3" id="emailTS" aria-describedby="name" placeholder="Your Email" required>
+                  <input type="number" class="form-control w-75 mb-3" id="phoneTS" aria-describedby="phone" placeholder="Your PhoneNo." required>
+                  <input type="password" class="form-control w-75 mb-3" id="pwdTS" aria-describedby="name" placeholder="Your Password." required>
+                  <button type="button" class="btn btn-primary px-4" onclick="teacherSignUp()">Submit</button>
+                  <p class="message"> if you are student?<a href="/signup.html"> SignUp</a></p>
+              </div>
+        </form>
+       <!---- <form>
+          <div class="form-group login-form">
+              <input type="text" class="form-control w-75 mb-3" id="name" aria-describedby="name" placeholder="Your Name..." required>
+              <input type="tel" class="form-control w-75 mb-3" id="phone" aria-describedby="phone" placeholder="Phone Number" required>
+              <textarea type="" placeholder="Message (Optional)"  class="form-control w-75 mb-3"id="message"  rows="5" ></textarea>
+              <button type="submit" class="btn btn-primary px-5">Submit</button>
+              <p class="message">Account?<a href="#">Teacher</a></p>
+          </div>
+    </form>---->
+        </div>
+        <div class="col-md-5 py-4 pl-4  text-white" style="background-color: rgb(44, 122, 122);">
+          <h4 class="pb-3">Add more Detail's</h4>
+            <img src="/images/user.png" class="img-fluid imag my-4" alt="..." >
+            <form>
+            <div class="form-group">
+                <textarea class="form-control" id="description" rows="3" placeholder="About you ..."></textarea>
+            </div> 
+            </form>
+            <div class="modal-footer justify-content-center">
+                <a class="fb-ic btn btn-primary" style="border-radius: 50% ; "><i class="fab fa-facebook-f text-white "></i></a>
+                <a class="tw-ic btn btn-info" style="border-radius: 50%;"><i class="fab fa-twitter text-white "></i></a>
+                <a class="li-ic btn btn-primary" style="border-radius: 50%;"><i class="fab fa-linkedin-in text-white "></i></a>
+                <a class="ins-ic btn btn-danger" style="border-radius: 50%;"><i class="fab fa-instagram text-white"></i></a>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div id="snackbar"></div>
+</body>
+</html>

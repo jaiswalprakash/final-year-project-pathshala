@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="./images/SVCE-Logo.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="./css/commonStyle.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/signup.css"> -->
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib//bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="./js/common.js"></script>
+  <script type="text/javascript" src="./js/signUp.js"></script>
+
+
+  <!------------------------------css------------------------------------>
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0, 5, 6, 0.466), rgba(5, 0, 5, 0.466)), url(/images/greenblue.jpg);
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    .login-form {
+      display: none;
+    }
+  </style>
+  <!----------------------------------------------------------------------------->
+
+  <title>PathShala-Elearning</title>
+</head>
+
+<body>
+  <div id="snackbar"></div>
+  <div class="container  py-3 ">
+    <div class="row py-5 mt-5 col-11 mx-auto">
+      <div class="col-md-6 pl-4 py-4  font-weight-bold" style="background-color: rgba(247, 249, 252, 0.596);">
+        <h3 class="pb-3">SignUp</h3>
+
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control w-75 mb-3" id="nameSS" aria-describedby="name"
+              placeholder="Your Name..." required>
+            <input type="email" class="form-control w-75 mb-3" id="emailSS" aria-describedby="phone"
+              placeholder="Your Email" required>
+            <input type="password" class="form-control w-75 mb-3" id="pwdSS" aria-describedby="phone"
+              placeholder="Your Password" required>
+            <input type="text" class="form-control w-75 mb-3" id="usnSS" aria-describedby="name" placeholder="USN"
+              required>
+            <input type="number" class="form-control w-75 mb-3" id="phoneSS" aria-describedby="name"
+              placeholder="Your Phone No." required>
+            <select class="form-control w-75 mb-3" id="branchLst">
+            </select>
+            <button type="button" class="btn btn-primary px-4" onclick="studentSignUp() ">Submit</button>
+            <p class="message"> if you are a teacher?<a href="/teacher.html">Signup</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-5 py-4 pl-4  text-white" style="background-color: rgb(44, 122, 122);">
+        <h4 class="pb-5">Contact information</h4>
+        <p class="pb-3"><i class="fa fa-envelope pr-4"></i>pathshala@625.edu.in</p>
+        <p class="pb-3"><i class="fas fa-globe pr-4"></i>www.pathshala.com</p>
+        <p class="pb-3">Vidyanagar, NH7, Bangalore International Airport Road(KIA), Chikkajala, Bangalore North- 562157,
+          PH: 9731226262,FAX: 080-28477461,</p>
+      </div>
+    </div>
+  </div>
+</body>
+</body>
+
+</html>

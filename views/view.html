@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SVCE-Elearning</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="/css/commonStyle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+  <link href="#" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="../js/lib/jquery.min.js"></script>
+
+    <script  type="text/javascript" src="js/searchDetail.js"></script>
+    <script  type="text/javascript" src="js/common.js"></script>
+
+   
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .main_body{
+    min-width: 0px;
+    width: 100%;
+  }
+  .sidebar{
+    width: 15rem;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    
+  }
+  .sidebar-heading{
+    padding: 6px;
+
+  }
+  @media(min-width: 768px){
+
+    #wrap.toggled .sidebar {
+      margin-left: -15rem;
+      
+   
+ 
+    }
+  }
+  @media(min-width: 268px){
+    
+    #wrap.toggled .sidebar {
+      margin-left: -15rem;
+    }
+  }
+  #nav1 {
+    z-index: 10;
+    background-color: #22ccc4;
+    }
+
+  #nav1 li {
+        padding-left: 20px;
+       }
+
+ 
+
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 2px solid #2ba773;
+}
+
+
+</style>
+
+<body >
+
+  <nav class="navbar navbar-expand-lg navbar-light " id="nav2">
+    <a class="navbar-brand text-white font-weight-bold " href="#" > SVCE-Elearning</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end ">
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#" id="userName"></a>
+          </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold btn btn-warning" href="#" style="border-radius: 30px;"> <i class="far fa-heart "></i> WishList</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold btn btn-danger" href="#"><i class="fas
+                fa-sign-in-alt"></i> SignOut</a>
+          </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+
+  <!---------------------------search --------------------------->
+
+ <div class="container-fluid">
+  <div class="col-sm-12" style="margin-top:60px; margin-bottom: 50px;">
+    <div class="searchbar">
+      <input class="search_input" type="text" name="" placeholder="search here.." id="searchText" onkeyup="searchVideo()" >
+      <a class="search_icon" onclick="searchVideo()"><i class="fas fa-search"></i></a>
+      
+    </div>
+  </div>
+</div>
+<!-- side navbar  -->
+  <!--------------------------------------------------------------->
+  <div class="d-flex toggled" id="wrap">
+    <div class="sidebar border-light" style="background-color:  #22ccc4;">
+      <div class="sidebar-heading">
+        <h5 class="text-center font-weight-bold text-white "> Filter: All</h5>
+      </div>
+      <ul class="list-group list-group-flush sticky-top">
+         
+          <div class="dropdown btn-group list-group-item list-group-item-action " style="background-color:  #22ccc4;">
+            <button type="button" class="btn btn-danger  dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;"><i class="fas fa-code-branch"></i>
+              Branch
+            </button>
+            
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another </a>
+              <a class="dropdown-item" href="#">Something </a>
+              
+            </div>
+          </div>
+        
+          <div class="btn-group list-group-item list-group-item-action" style="background-color:  #22ccc4;">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;"><i class="fas fa-users"></i>
+              Semester
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another </a>
+              <a class="dropdown-item" href="#">Something</a>
+              
+            </div>
+          </div>
+          <div class="btn-group list-group-item list-group-item-action" style="background-color:  #22ccc4;">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;"><i class="fas fa-book"></i>
+              Subject
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another </a>
+              <a class="dropdown-item" href="#">Something</a>
+              
+            </div>
+          </div>
+        
+      </ul>
+
+    </div>
+    <div class="main_body">
+      <nav class="navbar navbar-expand-lg  navbar-light " id="nav1" >
+        
+        <!-- <button class="btn btn-outline-light font-weight-bold" id="toggler">
+          Filter
+        </button> -->
+        <a class="navbar-brand text-white font-weight-bold mx-2 " href="#" id="search_number"></a>
+        <div class="collapse navbar-collapse" >
+          <ul class="navbar-nav mr-auto w-100  ">
+            <li class="nav-item">
+            </li> 
+          </ul>
+         </div>
+      </nav>
+      <!----------------------------------other matrial------------>
+       
+    <section class="py-3 "  style="min-height: 110vh;">
+      
+      <div class="container-fluid">
+        
+          <div class="row flex-row  mx-4"   id="searchResult"> 
+          </div>
+        
+      </section>
+     </div>
+   </div>
+
+
+ 
+  <!--------------------------------------footer------------------------------------------>
+    
+<footer class="page-footer font-small mdb-color ">
+
+    
+    <div class="container text-center text-md-left">
+  
+      
+      <div class="row d-flex align-items-center">
+  
+        
+        <div class="col-md-6 col-lg-8">
+  
+          
+          <p class="text-center text-md-left text-white">2020 SVCE-Elearning All Rights Reserved 
+          </p>
+  
+        </div>
+        
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-white">
+  
+         
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <p>Terms of Service</p>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <p>Privacy Policy</p>
+                </a>
+              </li>
+             
+            </ul>
+          </div>
+  
+        </div>
+       
+  
+      </div>
+      
+  
+    </div>
+    
+  
+  </footer>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      $('#toggler').click(function(event){
+          event.preventDefault();
+          $('#wrap').toggleClass('toggled');
+      });
+    });
+  </script>
+  </body>
+
+</html>
+

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PathShala-Elearning</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="../css//commonStyle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+  <link href="#" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="../js/lib/jquery.min.js"></script>
+    <script  type="text/javascript" src="./js/instructor1.js"></script>
+    <script  type="text/javascript" src="../js/common.js"></script>
+
+   
+</head>
+<style>
+
+#nav2 {
+    z-index: 10;
+    background-color: rgb(44, 122, 122);
+    
+    }
+
+#nav2 li {
+        padding-left: 20px;
+       }
+
+ #nav1 {
+    z-index: 10;
+    background-color: #22ccc4; 
+    }
+
+#nav li {
+        padding-left: 20px;
+       }
+/*----footer--*/
+
+.page-footer{
+    background-color: rgb(44, 122, 122);
+ 
+}
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 2px solid #2ba773;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#60ccc733; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #60ccc733;  
+}
+/* search bar  */
+
+.searchbar {
+      margin-bottom: auto;
+      margin-top: auto;
+      height: 45px;
+      background-color: rgba(176, 214, 214, 0.664);
+      border: rgb(44, 122, 122) solid 2px;
+      border-radius: 30px;
+      padding: 10px;
+    }
+
+    .search_input {
+      color: rgb(44, 122, 122);
+      border: 0;
+      outline: 0;
+      background: none;
+      width: 0;
+      caret-color: transparent;
+      line-height: 20px;
+      transition: width 0.4s linear;
+    }
+
+    .searchbar:hover>.search_input {
+      padding: 0 5px;
+      width: 90%;
+      caret-color: red;
+      transition: width 0.4s linear;
+    }
+
+    .searchbar:hover>.search_icon {
+      background: rgb(44, 122, 122);
+      color: #e74c3c;
+    }
+
+    .search_icon {
+      height: 25px;
+      width: 30px;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      background: rgb(44, 122, 122);
+    }
+/* search bar  */
+
+/*--------- common css-------------- */
+.uploadImage {
+    
+    position: relative;
+    
+}
+
+.uploadImage:hover {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.02);
+    opacity: 1;
+
+}
+img {
+    cursor: pointer;
+}
+/* -----------common css------------- */
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden;
+  min-width: 180px;
+  margin-left: -125px;
+  background-image: linear-gradient(to left, rgba(0, 255, 200, 0.425), rgb(54, 150, 150));
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 1%;
+  top: 105px;
+  font-size: 17px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 200;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 105px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 105px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 105px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 105px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+</style>
+
+<body >
+  <div id="snackbar"></div>
+
+ <!--------------------------navbar-------------------------------------------->
+ <nav class="navbar navbar-expand-lg navbar-light " id="nav2">
+    <a class="navbar-brand text-white font-weight-bold " href="#" > PathShala</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end ">
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#" id="userName" ></a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link text-white font-weight-bold " id="userName"></a> -->
+          <a class="nav-link text-white font-weight-bold btn btn-danger " href="#" onclick="logout()" ><i class="fas
+            fa-sign-in-alt"></i> SignOut</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+  
+ 
+
+<!--------------------------navbar-------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav1">
+  <div class="justify-content-center ">
+    <a class="fb-ic mx-2"><i
+        class="fab fa-facebook-f text-white"></i></a>
+
+    <a class="tw-ic mx-2"><i
+        class="fab fa-twitter text-white"></i></a>
+
+    <a class="li-ic mx-2"><i
+        class="fab fa-linkedin-in text-white"></i></a>
+
+    <a class="ins-ic mx-2"><i
+        class="fab fa-instagram text-white"></i></a>
+  </div>
+  
+  <div class="collapse navbar-collapse" >
+    <ul class="navbar-nav mr-auto w-100 justify-content-end ">
+      
+      
+      
+    </ul>
+    
+  </div>
+</nav>
+  <div class="jumbotron jumbotron-fluid masthead"
+  style="background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.329)),url('/images/teacher.jpeg') center/cover no-repeat;">
+  <div class="container text- align-items-center">
+    <div class="p-4"></div>
+
+    <h1 class=" font-weight-bold w-responsive text-white"><span style="color:rgb(255, 115, 0);">Turn</span> what you know into  an  
+      <span style="color:rgb(0, 162, 255)"> online Video </span> <br>
+      Course and instruct
+      <span style="color: rgb(17, 66, 131)">students</span>
+    </h1>
+    <p class="text-white" style="color:red ;">
+      Your career is defined by what you know and how well you know it.
+      
+      <span class="font-weight-bold" style="color: rgb(170, 25, 25)">PathShala-elearning.</span>
+    </p>
+    <a class=" text-white font-weight-bold btn btn-warning btn-lg" href="#" style="border-radius: 30px;" onclick="uploadPage()"><i class="fas fa-arrow-circle-up"></i> Upload</a>
+    <a class=" text-white font-weight-bold btn btn-primary btn-lg" href="#" style="border-radius: 30px;" onclick="uploadPage()"><i class="fas fa-video"></i> Make online video </a>
+  <div class="py-3"></div>
+    </div>
+  </div>
+
+  
+
+<!-- recommended video nav bar  -->
+
+
+<!-- recommended video  -->
+<section class="py-3 "  style="min-height: 90vh;">
+  <h2 class="text-uppercase text-primary py-3 text-center font-weight-bold"
+        style="color: rgb(202, 17, 17);">
+        <b style="color: rgb(12, 96, 121);">Your Videos</b>
+      </h2>
+      <hr class="bg-danger mx-auto mb-3" style="height: 3px; max-width: 110px;"
+        />
+    
+  <div class="container-fluid">
+    
+      <div class="row   mx-2" style="overflow-x: auto;" id="topicList">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!--------------------------------------footer------------------------------------------>
+    
+<footer class="page-footer font-small mdb-color ">
+
+    
+  <div class="container text-center text-md-left">
+
+    
+    <div class="row d-flex align-items-center">
+
+      
+      <div class="col-md-6 col-lg-8">
+
+        
+        <p class="text-center text-md-left text-white">2020 PathShala-Elearning All Rights Reserved 
+        </p>
+
+      </div>
+      
+      <div class="col-md-5 col-lg-4 ml-lg-0 text-white">
+
+       
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <p>Terms of Service</p>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <p>Privacy Policy</p>
+              </a>
+            </li>
+           
+          </ul>
+        </div>
+
+      </div>
+     
+
+    </div>
+    
+
+  </div>
+  
+
+</footer>
+</body>
+
+  <!-- <div>
+    <img src="./images/user.png" alt="user" style="width:60px;  border-radius: 50%; float:left; margin-right:10px">
+    <div class="media-body">
+      <h4>${o.userId.name}<small><i style="color:red"> Posted on ${o.date}</i></small></h4>
+      <p style="text-align: left; color:purple">${o.text}</p> 
+      <textarea class="form-control" rows="2" id="replycomment"></textarea>
+      <br>
+      <button class="btn btn-info" onclick="commentreply('${o._id}')">Reply</button>
+      <div id="replySection" >
+      ${ o.reply.map((r)=>{
+        $("#replySection").append(`<div  class="ml-5">
+         <h4>${r.userName}<small><i style="color:red"> Replyed on ${r.date}</i></small></h4>
+         <p style="text-align: left; color:purple">${r.text}</p>
+         <br>` )
+      })}
+      </div> 
+      </div>
+      
+    </div>    
+    </div> -->
+
+
+</html>

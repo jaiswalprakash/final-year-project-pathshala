@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> PathShala-Elearning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css" />
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" >
+    <link rel="stylesheet" type="text/css" href="../css/commonStyle.css" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="./js/uploadForm.js"></script>
+    <script type="text/javascript" src="../js/signUp.js"></script>
+
+    <script type="text/javascript" src="../js/common.js"></script>
+  </head>
+  <body>
+    <style>
+      
+
+      .page-footer{
+    background-color: rgb(44, 122, 122);
+ 
+}
+      
+.topnav {
+  overflow: hidden;
+  background-color:  rgb(44, 122, 122);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.active {
+  
+  color: white;
+}
+
+    </style>
+    <!---------------------------->
+    <!------------- navbar-fixed-top ------------------------->
+    <!---------------------------->
+    <div class="topnav navbar-fixed-top" id="myTopnav">
+      <a href="#" class="active font-weight-bold">PathShala</a>
+      <div style="float:right">
+        <!-- <a class="navbar-brand" id="userName"></a> -->
+        <a href="#" data-toggle="modal" data-target="#student_signUp" onclick="logout()" style="background-color: rgb(221, 28, 28);;">SignOut</a>
+        
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a> -->
+      </div>
+    </div>
+    <br><br><br>
+    <!---------------------------->
+    <!-- closing of nav bar  -->
+    <!---------------------------->
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <h3 class="alert alert-success">UPLOADED video and document</h3>
+        <div style="margin-left: 40px; margin-top: 20px;">
+          <form enctype="multipart/form-data">
+            <br />
+            <div>
+              <label class="control-label col-sm-2" style="margin-top: 10px;"
+                >Enter the title for video:</label
+              >
+              <div class="col-sm-7">
+                <input
+                  required
+                  type="text"
+                  class="input form-control"
+                  placeholder="Enter the title for video"
+                  id="title"
+                  required
+                />
+              </div>
+            </div>
+            <br /><br /><br />
+
+            <div>
+              <label class="control-label col-sm-2" style="margin-top: 10px;"
+                >select video:</label
+              >
+              <div
+                class="form-group btn btn-default btn-lg col-sm-7 alert-info"
+              >
+                <input
+                  required
+                  type="file"
+                  accept="video/*"
+                  onchange="fileUpload(event.target,'VID')"
+                  required
+                />
+              </div>
+            </div>
+            <br /><br /><br />
+            <div>
+              <label class="control-label col-sm-2" style="margin-top: 10px;"
+                >select Thumbnail image:</label
+              >
+              <div class="form-group btn btn-default btn-lg col-sm-7 alert-info">
+                <input
+                  type="file"
+                  accept="image/*"
+                  onchange="fileUpload(event.target,'IMG')"
+                  required
+                />
+              </div>
+            </div>
+            <br /><br /><br />
+            <div>
+              <label class="control-label col-sm-2" style="margin-top: 10px;"
+                >select document:</label
+              >
+              <div
+                class="form-group btn btn-default btn-lg col-sm-7 alert-info"
+              >
+                <input
+                  type="file"
+                  accept=".pdf"
+                  onchange="fileUpload(event.target,'DOC')"
+                />
+              </div>
+            </div>
+            <br /><br /><br />
+
+            <div style="margin-top: 20px; margin-bottom: 70px;">
+              <div class="col-xs-3">
+                <select
+                  class="form-control"
+                  id="branchLst"
+                  onchange="fun1(event.target.value,'BRACHID')"
+                  required
+                >
+                </select>
+              </div>
+              <div class="col-xs-3">
+                <select
+                  class="form-control"
+                  id="semesterLst"
+                  onchange="fun1(event.target.value,'SEMID')"
+                  required
+                >
+                </select>
+              </div>
+              <div class="col-xs-3">
+                <option value="" hidden>select semester</option>
+                <select class="form-control" id="subjectLst" required>
+                  <option value="" hidden>select subject</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="width: 950px;">
+              <label for="comment">Description:</label>
+              <textarea
+                class="form-control"
+                rows="3"
+                id="description"
+              ></textarea>
+            </div>
+            <div style="float: left;">
+              <br />
+              <button
+                type="button"
+                class="btn btn-success btn-lg"
+                onclick="upload()"
+              >
+                Upload
+              </button>
+              <br></br>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+       <!--------------------------------------footer------------------------------------------>
+    <!--------------------------------------footer------------------------------------------>
+    
+<footer class="page-footer font-small mdb-color " style="height: 10vh;">
+
+    
+  <div class="container text-center ">
+
+    
+    <div class="row ">
+
+      
+      <div class="col-md-6 col-lg-8">
+
+        
+        <p style="color: #f2f2f2; padding-right: 50%; padding-top: 3%;">2020 PathShala-Elearning All Rights Reserved 
+        </p>
+
+      </div>
+      
+      <div class="col-md-5 col-lg-4 ml-lg-0 ">
+
+       
+        <div >
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              
+                <p class="text-white" style="color: #f2f2f2; padding-top: 20%;">Terms of Service</p>
+              
+            </li>
+            <li class="list-inline-item ">
+              
+                <p class="text-white" style="color: #f2f2f2; ">Privacy Policy</p>
+              
+            </li>
+           
+          </ul>
+        </div>
+
+      </div>
+     
+
+    </div>
+    
+
+  </div>
+  
+
+</footer>
+    <div id="snackbar"></div>
+  </body>
+</html>

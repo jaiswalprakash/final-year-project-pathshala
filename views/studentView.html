@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PathShala-Elearning</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="/css/commonStyle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+  <link href="#" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <script src="../js/lib/jquery.min.js"></script>
+  <script  type="text/javascript" src="./js/studentView.js"></script>
+  <script  type="text/javascript" src="../js/common.js"></script>
+
+   
+</head>
+<style>
+ #nav1 {
+    z-index: 10;
+    background-color: #22ccc4; 
+    }
+
+#nav li {
+        padding-left: 20px;
+       }
+
+       
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 2px solid #2ba773;
+}
+
+</style>
+
+<body >
+  <div id="snackbar"></div>
+
+ <!--------------------------navbar-------------------------------------------->
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top " id="nav2">
+    <a class="navbar-brand text-white font-weight-bold " href="#" > PathShala </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end ">
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#" id="userName"></a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link text-white font-weight-bold " id="userName"></a> -->
+          <a class="nav-link text-white font-weight-bold btn btn-danger" href="#" onclick="logout()"><i class="fas
+            fa-sign-in-alt"></i> SignOut</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+  <!---------------------------search --------------------------->
+  
+ <!-- search bar  -->
+ <div class="container-fluid">
+  <div class="col-sm-12" style="margin-top:60px; margin-bottom: 50px;">
+    <div class="searchbar">
+      <input class="search_input" type="text" name="" placeholder="search here.." id="searchText" onkeyup="searchVideo()">
+      <a class="search_icon" onclick="searchVideo()" ><i class="fas fa-search"></i></a>
+    </div>
+  </div>
+</div>
+<!-- closing of search bar  -->
+
+<h1 class="display-6 font-weight-bold w-responsive text-center"> Selected Branch <span style="color: rgb(255, 0, 0);"> video</span></h1>
+<hr class="bg-danger mx-auto mb-3 " style="height:3px;max-width:150px; ">
+
+<!--------------------------navbar-------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav1">
+  <a class="navbar-brand text-white font-weight-bold " href="#" > Selected Branch video</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupported" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupported">
+    <ul class="navbar-nav mr-auto w-100 justify-content-end ">
+      
+      <!-- <li class="nav-item">
+        <a class="nav-link text-white font-weight-bold btn btn-danger" href="view.html"> View all</a>
+      </li> -->
+      
+    </ul>
+    
+  </div>
+</nav>
+  <!---------------------------studentview------------------------>
+  <section class="py-3 "  style="min-height: 85vh;">
+    <div class="container-fluid">
+        <div class="row flex-row flex-nowrap mx-2" style="overflow-x: auto;" id="getTopic_Branch"></div>
+    </div>
+  </section>
+
+<!-- recommended video nav bar  -->
+<h1 class="display-6 font-weight-bold w-responsive text-center"> RecentAdded<span style="color: rgb(255, 0, 0);"> video</span></h1>
+<hr class="bg-danger mx-auto mb-3 " style="height:3px;max-width:150px; ">
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav1">
+    <a class="navbar-brand text-white font-weight-bold " href="#" > RecentAdded  video</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupported" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupported">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end ">
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold btn btn-danger" href="view.html"> View all</a>
+        </li>  -->
+      </ul>
+      
+    </div>
+  </nav>
+
+<!-- recommended video  -->
+<section class="py-3 "  style="min-height: 90vh;">
+    
+  <div class="container-fluid">
+    
+      <div class="row flex-row flex-nowrap  mx-2" id="recentAdded" style="overflow-x: auto;">
+        
+        <!-- <div class="col-sm-3 my-3">
+          <div class="card" style="width: 85%; height: 95%; box-shadow: 0 5px 8px 0 rgba(0, 0, 0,
+          0.2),
+          0 9px 26px 0 rgba(0, 0, 0, 0.19);">
+            <img class="card-img-top" height="150px" src="/images/cs.jpg" alt="Card image cap">
+            <div class="card-body" style="height: 200px; overflow-x: auto;">
+              <h5 class="card-title">ECE</h5>
+              <p class="card-text ">CSE,Sem 3,ANALOG AND DIGITAL ELECTRONICS</p>
+              <p><b class="font-weight-bold text-danger card-text ">Instructor:</b> SAHIL SINGH</p>
+            </div>
+          
+          </div>
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------demo---------------------------------->
+
+ <!--------------------------------------footer------------------------------------------>
+    
+<footer class="page-footer font-small mdb-color ">
+
+    
+  <div class="container text-center text-md-left">
+
+    
+    <div class="row d-flex align-items-center">
+
+      
+      <div class="col-md-6 col-lg-8">
+
+        
+        <p class="text-center text-md-left text-white">2020 PathShala-Elearning All Rights Reserved 
+        </p>
+
+      </div>
+      
+      <div class="col-md-5 col-lg-4 ml-lg-0 text-white">
+
+       
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <p>Terms of Service</p>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <p>Privacy Policy</p>
+              </a>
+            </li>
+           
+          </ul>
+        </div>
+
+      </div>
+     
+
+    </div>
+    
+
+  </div>
+  
+
+</footer>
+</body>
+
+
+
+</html>

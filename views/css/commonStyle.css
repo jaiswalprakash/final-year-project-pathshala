@@ -1,0 +1,177 @@
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+img {
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.form {
+    margin-top: 0px;
+    margin-block: center;
+}
+
+/*------------------- nav bar or index.html---------------------- */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav2 {
+    z-index: 10;
+    background-color: rgb(44, 122, 122);
+    }
+
+#nav2 li {
+        padding-left: 20px;
+       }
+
+
+/*------------------footer------------------------*/
+ 
+
+.page-footer{
+        background-color:   rgb(35, 117, 117);
+    }
+    
+
+/* ----------------------scroll bar----------------------------  */
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgba(201, 223, 223, 0.623);; 
+    border-radius: 10px;
+  }
+  
+
+
+/* ------------------scroll bar ending----------------------- */
+
+
+/*--------- card css-------------- */
+.uploadImage {
+    
+    position: relative;
+    
+}
+
+.uploadImage:hover {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.02);
+    opacity: 1;
+
+}
+ /*----------- card --------------*/
+
+
+ /* search bar  */
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 45px;
+    background-color: rgba(176, 214, 214, 0.664);
+    border: rgb(44, 122, 122) solid 2px;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .search_input {
+    color: rgb(44, 122, 122);
+    border: 0;
+    outline: 0;
+    background: none;
+    transition: width 0.4s linear;
+  }
+
+  
+
+  .searchbar:hover>.search_icon {
+    background: rgb(44, 122, 122);
+    color: #e74c3c;
+  }
+
+  .search_icon {
+    height: 25px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    background: rgb(44, 122, 122);
+  }
+/* search bar  */
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden;
+  min-width: 180px;
+  margin-left: -125px;
+  background-image: linear-gradient(to left, rgba(0, 255, 200, 0.425), rgb(54, 150, 150));
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 1%;
+  top: 65px;
+  font-size: 17px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 200;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 65px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 65px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 65px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 65px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
