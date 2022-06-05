@@ -41,5 +41,13 @@
     "test": "test"
   },
   "keywords": [],
-  "description": ""
+  "description": "pathshala.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaiswalprakash/final-year-project-pathshala.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaiswalprakash/final-year-project-pathshala/issues"
+  },
+  "homepage": "https://github.com/jaiswalprakash/final-year-project-pathshala#readme"
 }
